@@ -1,0 +1,128 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+   }
+   body{
+    background-color: #e6e6e6;
+   }
+  #top-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #buttons{
+    padding-right: 300px;
+    
+  }
+  #buttons button{
+    border-radius: 200px;
+    border: none;
+    background-color:#66BFDB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    color: #ffffff;
+    padding: 10px 20px;
+    
+    
+
+   /* box-shadow:  0 8px 16px 0 rgba(171, 171, 171, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  }
+  #regenerate{
+    background: url(again.png) ;
+    padding: 10px;
+  }
+
+
+
+
+ p{
+   font-size: 20px;
+   font-family: 'Times New Roman', Times, serif;
+    
+    line-height: 25pt;
+    padding-bottom: 20px;
+    color: #484848;
+    
+ }
+ .titles{
+    padding-bottom: 10px;
+ }
+ .titles p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #B50000;
+    line-height: 12pt;
+    padding: 0%;
+ }
+ #quote {
+    font-style: italic;
+    
+ }
+ #book-name{
+    
+    font-style: italic;
+    
+}
+
+ 
+
+
+ #writer-andtitle{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+ }
+
+ img{
+   object-fit: cover;
+   width: 100%;
+   height: 484px;
+  
+ }
+#book-id{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 300px;
+    padding-right: 300px;
+    /*background-color: rgb(221, 221, 240); */
+}
+#texts{
+    padding-right: 50px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgb(215, 193, 236); */
+    padding-left: 300px;
+    
+}
+.dropdown{
+    border-radius: 200px;
+    border: none;
+    background-color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    color: #a2a2a2;
+    padding: 10px 20px;
+    padding-right: 10px;
+    box-shadow: 0 2px 20px 0 rgba(200, 200, 200, 0.2), 0 2px 4px 0 rgba(0,0,0,0.19);;
+}
+
+nav select option {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 20px;
+}
+.silent{
+  color:#484848 ;
+}
+#mylogo{
+  padding-top: 10px;
+  width:56px ;
+  height: 41px;
+}
