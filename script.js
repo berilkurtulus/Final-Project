@@ -1,40 +1,3 @@
-/*
-const bookDatebase =[
-  {
-    writer:'Jules Verne',
-    bookName:'Twenty Thousand Leagues Under the Sea',
-    year:1870,
-    topQuote:'',
-    shortSummary:"Jules Verne's classic novel follows the adventures of Captain Nemo and Professor Pierre Aronnax as they embark on a submarine journey aboard the Nautilus. The novel explores the wonders and mysteries of the deep sea and incorporates advanced technology for its time.",
-    coverImage:'',
-    genre:'Science Fiction',
-    country:'France',
-  },
-
-  {
-    writer:'H.G. Wells',
-    bookName:'The War of the Worlds',
-    year: 1898 ,
-    topQuote:'',
-    shortSummary:  "H.G. Wells'sgroundbreaking work tells the story of an alien invasion of Earth by Martians. The novel is known for its realistic portrayal of the consequences of interplanetary conflict and has had a significant influence on the science fiction genre.",
-    coverImage:'',
-    genre:'Science Fiction',
-    country:'United Kingdom',
-  },
-  
-  {
-    writer:'Aldous Huxley',
-    bookName:'Brave New World',
-    year:1932,
-    topQuote:'',
-    shortSummary:"Aldous Huxley's dystopian novel presents a future society where individuals are conditioned from birth and assigned specific roles in a highly controlled and technologically advanced world. The story explores themes of technology, social control, and the consequences of sacrificing individuality for societal stability.",
-    coverImage:'',
-    genre:'Science fiction',
-    country:'United Kingdom',
-
-  },
-]
- */
 const booksDatabase = [
  //Science Fiction
   {
@@ -192,5 +155,35 @@ const booksDatabase = [
 ]
 const genres = ['Science Fiction', 'Fantasy', 'Crime', 'Romance']
 const timePeriods = ['1870-1900', '1900-1945', '1945-1990', '1990-Today']
+/*Barney
+function filter(chosenGenre, period) {
+  const chosenBooks = booksDatabase.filter((book) => book.genre == chosenGenre)
+  console.log(chosenBooks)
+}
 
+const searchButton= document.getElementById('search')
+function searchFirst(){
+  dropdown-1
+}
+*/
 
+/*creating default text*/
+function defaultContent() {
+  const defaultTitle = document.getElementById("writer");
+  defaultTitle.innerHTML = "<h2>Welcome to Book Suggester!</h2>";
+  
+  const defaultText = document.getElementById("quote");
+  defaultText.innerHTML = "<p>Please select a GENRE and a TIME PERIOD to get book suggestions.</p>"
+}
+
+/*displaying the default text*/
+window.onload=function(){
+  defaultContent();
+}
+console.log(defaultText)
+
+/*
+1)function to generate random book suggestions
+2)function for a search button
+3)function to display the suggestion on the page
+*/
