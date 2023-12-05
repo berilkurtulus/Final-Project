@@ -13,48 +13,39 @@
      <nav>
          <img src="Logo.png" alt="" id="mylogo">
          <div class="custom-select">
-            <select class="dropdown" id="dropdown-1">
-             <option class="silent">Genre</option>
-             <option>Science Fiction</option>
-             <option>Fantasy</option>
-             <option>Crime</option>
-             <option>Romance</option>
+          <label for="dropdown-1"></label>  
+          <select name="dd1" class="dropdown" id="dropdown-1">
+             <option>Select Genre</option>
+             <option value="Science Fiction">Science Fiction</option>
+             <option value="Fantasy">Fantasy</option>
+             <option value="Crime">Crime</option>
+             <option value="Romance">Romance</option>
             </select>
             <span class="custom-arrow"></span>
          </div>
          <div class="custom-select">
-           <select class="dropdown" id="dropdown-2"><a href="#">Period</a>
-             <option class="silent">Period</option> 
-             <option>1870-1900</option>
-             <option>1900-1945</option>
-             <option> 1945-1990</option>
-             <option>1990-Today</option>
+           <label for="dropdown-2"></label>
+           <select name="dd2" class="dropdown" id="dropdown-2">
+             <option>Select Period</option> 
+             <option value="1870-1900">1870-1900</option>
+             <option value="1900-1945">1900-1945</option>
+             <option value="1945-1990"> 1945-1990</option>
+             <option value="1990-Today">1990-Today</option>
            </select>
            <span class="custom-arrow"></span>
          </div>
      </nav>
-  
+   
   <div id="buttons">
-     <button id="regenerate"></button>
-     <button id="search" onclick="">Search</button>
+     <button hidden id="regenerate-button" onclick="regenerateBook()">Regenerate</button>
+     <button id="search-button" onclick="getRandomBook()">Search</button>
  </div>
 </div> 
 
-  <div id="book-id">
-     <div id="texts"> 
-         <div class="titles">
-             <div id="writer-andtitle">
-                 <p id="writer"></p>
-                 <p id="book-name"></p>
-              </div>
-             <p id="year"></p>
-         </div>
-         <p id="quote"></p>
-         <p id="summary"></p>
-      </div>
-      
-      <!-- img -->
-   </div>
+<div id="display">
+ 
+</div>
+
 
     
 
